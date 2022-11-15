@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>test3</title>
+  <title>test4</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script>
@@ -50,7 +50,7 @@
 <p><br/></p>
 <div class="container">
   <h2>상 품 등 록</h2>
-  <form name="myform" method="post" action="<%=request.getContextPath()%>/j1114_Test4Ok?">
+  <form name="myform" method="post" action="<%=request.getContextPath()%>/j1114/Test4Ok">
   	<p>구매자 : <input type="text" name="name" id="name" autofocus /></p>
   	<div>
   		상품분류 : <select class="form-contorl mb-2" id="Classification" name="Classification">

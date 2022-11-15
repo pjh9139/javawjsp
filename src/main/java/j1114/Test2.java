@@ -28,6 +28,7 @@ public class Test2 extends HttpServlet {
 		String mid = request.getParameter("mid")==null ? "" : request.getParameter("mid");
 		String pwd = request.getParameter("pwd")==null ? "" : request.getParameter("pwd");
 		String name = request.getParameter("name")==null ? "" : request.getParameter("name");
+		String hostIp = request.getParameter("hostIp");
 		
 		mid = mid.trim();
 		
@@ -36,7 +37,7 @@ public class Test2 extends HttpServlet {
 		if(mid.equals("admin")&&pwd.equals("1234")) {
 			out.println("<script>");
 			out.println("alert('관리자 인증 성공!!')");
-			out.println("location.href='"+request.getContextPath()+"/study/1114/test2Res.jsp?mid="+mid+"&name="+name+"';");
+			out.println("location.href='"+request.getContextPath()+"/study/1114/test2Res.jsp?mid="+mid+"&name="+name+"&hostIp="+hostIp+"';");
 			out.println("</script>");
 		}
 		else {
@@ -45,6 +46,7 @@ public class Test2 extends HttpServlet {
 				out.println("history.back()");
 				out.println("</script>");
 			}
-		
+		System.out.println("접속 IP"+hostIp);
+		System.out.println("접속자명 "+name);
 	}
 }
